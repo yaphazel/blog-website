@@ -1,13 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<%- include('./partials/header') %>   
 <body>
-    <h1>Blog - <%=Date%></h1>
-    <p></p>
-</body>
-</html>
+    <div class="p-3 p-md-5">
+        <h1>Publish an entry</h1>
+        <form action="/" method="post">
+            <div class="form-group">
+                <label for="postTitle">Title</label>
+                <textarea class="form-control" name="postTitle" id="postTitle" cols="50" rows="2"></textarea>
+                <label for="postEntry">Post</label>
+                <textarea class="form-control" name="postEntry" id="postEntry" cols="50" rows="10"></textarea>
+            </div>           
+            <div>
+                <button type="submit" class="btn btn-sm btn-outline-info my-1" href="#">Publish</button>
+            </div>
+        </form>
+        
+        
+    </div>
+    
+    <%- include('./partials/footer') %>   
+
+

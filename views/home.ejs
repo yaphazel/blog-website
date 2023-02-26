@@ -4,7 +4,15 @@
         <h1>Welcome!</h1>
         <p><%=intro%></p>  
     </div>
-    
+    <div class="px-3 p-md-5">
+        <% posts.forEach( (post) => {%>
+            <h3><%= post.title %></h3> 
+            <small class="mb-1 text-muted"><%= post.time %></small> 
+            <p><%= post.entry %></p>  
+            
+        <% }) %>
+        
+    </div>
     <%- include('./partials/footer') %>   
 
 
