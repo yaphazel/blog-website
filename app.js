@@ -17,7 +17,7 @@ const homeContent = "This is the diary of Amanda Liew.";
 const aboutContent = " This diary is a place for me to capture my thoughts, feelings, and memories. A place to help me remember the things I did throughout the day and how I felt."
 const contactContent = "Contact me by via email myday@gmail.com "
 
-var posts = [];
+var posts = [{title : "Up Up and Away!" , entry : "Took the plunge. Dealing with the fall-out. About to secure my freedom from the evil tentacled monster. Takes 12 steps, but I hit a brick wall at 8. Took time off to recuperate and recover my energy. Now back from paradise, rejuvenated and ready to take on the beast again. All eyes on the prize, one more trip to deliver the coup de grace to that other beast in the west. Once that's done, its just a matter of time and protocol until the next step is reached.", time: "Wednesday, October 06, 2022 at 4:09PM"}];
 // get request
 app.get('/', (req, res) => {
     res.render("home",{
